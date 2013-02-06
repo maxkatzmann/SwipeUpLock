@@ -1,3 +1,10 @@
+/*
+
+Written by Max Katzmann (2013)
+
+
+*/
+
 #import <UIKit/UIKit.h>
 
 
@@ -32,6 +39,7 @@
     UISwipeGestureRecognizer *oneFingerSwipeUp = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(SULhandleLockSwipe:)];
     [oneFingerSwipeUp setDirection:UISwipeGestureRecognizerDirectionUp];
 
+    //add the GestureRecognizer
     [lockAwayView addGestureRecognizer:oneFingerSwipeUp];
 
 }
@@ -39,7 +47,7 @@
 //###################### GESTURE RECOGNIZER ######################
 
 %new
-//if the user swipes
+//what happens if the user swipes
 - (void)SULhandleLockSwipe:(UISwipeGestureRecognizer *)gesture {
     [self unlockWithSound:YES];
 }
