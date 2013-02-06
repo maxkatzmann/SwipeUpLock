@@ -2,6 +2,7 @@
 
 Written by Max Katzmann (2013)
 
+Thanks to DHowett for theos!
 
 */
 
