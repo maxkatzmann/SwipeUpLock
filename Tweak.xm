@@ -49,7 +49,8 @@ Thanks to DHowett for theos!
 
 %new
 //what happens if the user swipes
-- (void)SULhandleLockSwipe:(UISwipeGestureRecognizer *)gesture {
+- (void)SULhandleLockSwipe:(UISwipeGestureRecognizer *)gesture
+{
     [self unlockWithSound:YES];
 }
 
